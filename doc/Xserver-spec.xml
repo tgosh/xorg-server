@@ -169,11 +169,11 @@ X.org Foundation and Hewlett Packard
   <title>The X Window System</title>
 <para>
 The X Window System, or simply "X," is a
-windowing system that provides high-performance, high-level,
-device-independent graphics.
+windowing graphic system that provides high-performance, high-level,
+device-independent & 'very-fast drawing' (at least 30 fps) graphics service.
 </para>
 <para>
-X is a windowing system designed for bitmapped graphic displays.
+X is a windowing graphic system designed for bitmapped graphic displays.
 The display can have a
 simple, monochrome display or it can have a color display with up to 32 bits
 per pixel with a special graphics processor doing the work.  (In this
@@ -206,9 +206,11 @@ For details on the byte stream protocol, see "X Window System protocol."
 <section>
 <title>Overview of the Server</title>
 <para>
-The display server
-manages windows and simple graphics requests
-for the user on behalf of different client applications.
+The 'very-fast drawing out-to display' service-er (a module of server)
+manages windows-style graphics (resource like memory-zone of rectangular-zone 
+on bitmapped memory-zone etc..) and server provide simple graphics requests for the user
+on behalf of different client applications & tell drawing service-er module for what need
+draw out-to display.
 The client applications can be running on any machine on the network.
 The server mainly does three things:
 <itemizedlist>
